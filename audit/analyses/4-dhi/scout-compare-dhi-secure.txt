@@ -1,0 +1,149 @@
+  
+  
+  ## Overview
+  
+                     │           Analyzed Image           │                  Comparison Image                  
+  ───────────────────┼────────────────────────────────────┼────────────────────────────────────────────────────
+   Target            │  quiz-docker:dhi                   │  quiz-docker:secure                                
+     digest          │  0a79363e6652                      │  23fbe75acdb0                                      
+     tag             │  dhi                               │  secure                                            
+     platform        │ linux/amd64                        │ linux/amd64                                        
+     provenance      │                                    │ https://github.com/nginx/docker-nginx-unprivileged 
+                     │                                    │  bb7393196554e11f7ba95452856d8b5faff217bf          
+     vulnerabilities │    0C     0H     0M     0L         │    0C     1H     0M     0L     5?                  
+                     │           -1                   -5  │                                                    
+     size            │ 4.5 MB (-4.7 MB)                   │ 9.2 MB                                             
+     packages        │ 15 (-11)                           │ 26                                                 
+                     │                                    │                                                    
+  
+  
+  ## Environment Variables
+  
+  
+    - DYNPKG_RELEASE=1
+      NGINX_VERSION=1.30.6
+      PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+      PKG_RELEASE=1
+  
+  
+  
+  ## Labels
+  
+  
+    + com.docker.dhi.chain-id=sha256:24284b33ff6c2bca9722cbd3d37c65cd986389e0e632b8328caf04b78564995f
+    + com.docker.dhi.compliance=cis
+    + com.docker.dhi.created=2026-10-15T07:30:08Z
+    + com.docker.dhi.date.release=2025-04-23
+    + com.docker.dhi.definition=image/nginx/alpine-3.23/stable
+    + com.docker.dhi.distro=alpine-3.23
+    + com.docker.dhi.entitlement=public
+    + com.docker.dhi.flavor=
+    + com.docker.dhi.name=dhi/nginx
+    + com.docker.dhi.package-manager=
+    + com.docker.dhi.shell=busybox
+    + com.docker.dhi.title=Nginx stable
+    + com.docker.dhi.url=https://dhi.io/catalog/nginx
+    + com.docker.dhi.variant=runtime
+    + com.docker.dhi.version=1.30.6-alpine3.23
+    - maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>
+    - org.opencontainers.image.created=2026-10-19T00:05:51.551Z
+    - org.opencontainers.image.description=Unprivileged NGINX Dockerfiles
+    - org.opencontainers.image.licenses=Apache-2.0
+    - org.opencontainers.image.revision=bb7393196554e11f7ba95452856d8b5faff217bf
+    - org.opencontainers.image.source=https://github.com/nginx/docker-nginx-unprivileged
+    - org.opencontainers.image.title=docker-nginx-unprivileged
+    - org.opencontainers.image.url=https://github.com/nginx/docker-nginx-unprivileged
+    - org.opencontainers.image.version=1.30.6-alpine-slim
+  
+  
+  
+  ## Config
+  
+  
+      8080/tcp=
+    - cmd=nginx -g daemon off;
+    + cmd=-g daemon off;
+    - entrypoint=/docker-entrypoint.sh
+    + entrypoint=nginx
+    - stop_signal=SIGQUIT
+    + stop_signal=
+    - user=101
+    + user=65532
+      workdir=/
+  
+  
+  
+  ## Policies
+  
+  
+  2 improved, 0 worsened
+  Health score  Analyzed  B  (78%)  Comparison  C  (56%)
+  
+    Policy                                       Analyzed  Comparison  Change             
+  
+    Default non-root user                        v         v                   No Change  
+    No copyleft licenses                         ! 8       ! 17        -9      Improved   
+    No fixable critical or high vulnerabilities  v         ! 1         -1      Improved   
+    No high-profile vulnerabilities              v         v                   No Change  
+    No outdated base images                      v         v                   No Change  
+    No unapproved base images                    v         v                   No Change  
+    Supply chain attestations                    ! 2       ! 2                 No Change  
+  
+      View policy details → docker scout policy quiz-docker:dhi
+  
+  
+  ## Packages and Vulnerabilities
+  
+  
+    -   11 packages removed  
+    ⎌   12 packages changed (↑ 6 upgraded, ↓ 6 downgraded)  
+         3 packages unchanged
+  
+  
+    - 6 vulnerabilities removed
+  
+  
+     Package                 Type  Version                 Compared Version  
+  
+  -  alpine-base             apk                           3.24.4-r0         
+  ↓  alpine-baselayout       apk   3.7.2-r0                3.7.2-r1          
+  ↓  alpine-baselayout-data  apk   3.7.2-r0                3.7.2-r1          
+  -  alpine-keys             apk                           2.6-r0            
+  -  alpine-release          apk                           3.24.4-r0         
+  -  apk-tools               apk                           3.0.9-r0          
+  ↑  busybox                 apk   1.37.0_git20260817-r32  1.37.0-r31        
+  ↑  busybox-binsh           apk   1.37.0_git20260817-r32  1.37.0-r31        
+  -  ca-certificates         apk                           20261020-r0       
+  -  ca-certificates-bundle  apk                           20261020-r0       
+  -  gettext                 apk                           1.0-r0            
+  -  gettext-envsubst        apk                           1.0-r0            
+  -  libapk                  apk                           3.0.9-r0          
+  ↑  libcrypto3              apk   3.5.9-r2                3.5.9-r0          
+  -  libintl                 apk                           1.0-r0            
+  ↑  libssl3                 apk   3.5.9-r2                3.5.9-r0          
+  ↓  musl                    apk   1.2.5-r24               1.2.6-r3          
+     └─  -  HIGH         CVE-2026-107891 [https://scout.docker.com/v/CVE-2026-107891?s=alpine&n=musl&ns=alpine&t=apk&osn=alpine&osv=3.24&vr=%3C1.2.6-r6]     
+                         8.1    
+  
+  ↓  musl-utils              apk   1.2.5-r24               1.2.6-r3          
+     nginx                   apk   1.30.6-r1               1.30.6-r1         
+  ↑  openssl                 apk   3.5.9-r2                3.5.9-r0          
+     ├─  -  UNSPECIFIED  CVE-2026-95692  [https://scout.docker.com/v/CVE-2026-95692?s=alpine&n=openssl&ns=alpine&t=apk&osn=alpine&osv=3.24&vr=%3C3.5.9-r1]   
+     │                   0.0    
+     ├─  -  UNSPECIFIED  CVE-2026-95691  [https://scout.docker.com/v/CVE-2026-95691?s=alpine&n=openssl&ns=alpine&t=apk&osn=alpine&osv=3.24&vr=%3C3.5.9-r1]   
+     │                   0.0    
+     ├─  -  UNSPECIFIED  CVE-2026-88823  [https://scout.docker.com/v/CVE-2026-88823?s=alpine&n=openssl&ns=alpine&t=apk&osn=alpine&osv=3.24&vr=%3C3.5.9-r1]   
+     │                   0.0    
+     ├─  -  UNSPECIFIED  CVE-2026-88822  [https://scout.docker.com/v/CVE-2026-88822?s=alpine&n=openssl&ns=alpine&t=apk&osn=alpine&osv=3.24&vr=%3C3.5.9-r1]   
+     │                   0.0    
+     └─  -  UNSPECIFIED  CVE-2026-107496 [https://scout.docker.com/v/CVE-2026-107496?s=alpine&n=openssl&ns=alpine&t=apk&osn=alpine&osv=3.24&vr=%3C3.5.9-r1]  
+                         0.0    
+  
+  ↓  pax-utils               apk   1.3.8-r2                1.3.9-r1          
+     pcre2                   apk   10.49-r0                10.49-r0          
+  ↓  scanelf                 apk   1.3.8-r2                1.3.9-r1          
+  ↑  ssl_client              apk   1.37.0_git20260817-r32  1.37.0-r31        
+  -  tzdata                  apk                           2026f-r0          
+     zlib                    apk   1.4-r0                  1.4-r0            
+  
+  

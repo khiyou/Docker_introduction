@@ -1,0 +1,26 @@
+IMAGE          CREATED         CREATED BY                                      SIZE      COMMENT
+23fbe75acdb0   2 minutes ago   EXPOSE [8080/tcp]                               0B        buildkit.dockerfile.v0
+<missing>      2 minutes ago   USER 101                                        0B        buildkit.dockerfile.v0
+<missing>      2 minutes ago   COPY /app/dist /usr/share/nginx/html # buildÔÇª   57.3kB    buildkit.dockerfile.v0
+<missing>      2 minutes ago   RUN /bin/sh -c apk upgrade --no-cache # builÔÇª   3.14MB    buildkit.dockerfile.v0
+<missing>      2 minutes ago   USER root                                       0B        buildkit.dockerfile.v0
+<missing>      4 weeks ago     CMD ["nginx" "-g" "daemon off;"]                0B        buildkit.dockerfile.v0
+<missing>      4 weeks ago     USER 101                                        0B        buildkit.dockerfile.v0
+<missing>      4 weeks ago     STOPSIGNAL SIGQUIT                              0B        buildkit.dockerfile.v0
+<missing>      4 weeks ago     EXPOSE [8080/tcp]                               0B        buildkit.dockerfile.v0
+<missing>      4 weeks ago     ENTRYPOINT ["/docker-entrypoint.sh"]            0B        buildkit.dockerfile.v0
+<missing>      4 weeks ago     COPY 30-tune-worker-processes.sh /docker-entÔÇª   16.4kB    buildkit.dockerfile.v0
+<missing>      4 weeks ago     COPY 20-envsubst-on-templates.sh /docker-entÔÇª   12.3kB    buildkit.dockerfile.v0
+<missing>      4 weeks ago     COPY 15-local-resolvers.envsh /docker-entrypÔÇª   12.3kB    buildkit.dockerfile.v0
+<missing>      4 weeks ago     COPY 10-listen-on-ipv6-by-default.sh /dockerÔÇª   12.3kB    buildkit.dockerfile.v0
+<missing>      4 weeks ago     COPY docker-entrypoint.sh / # buildkit          8.19kB    buildkit.dockerfile.v0
+<missing>      4 weeks ago     RUN |2 UID=101 GID=101 /bin/sh -c sed -i 's,ÔÇª   61.4kB    buildkit.dockerfile.v0
+<missing>      4 weeks ago     RUN |2 UID=101 GID=101 /bin/sh -c set -x    ÔÇª   11.7MB    buildkit.dockerfile.v0
+<missing>      4 weeks ago     ARG GID=101                                     0B        buildkit.dockerfile.v0
+<missing>      4 weeks ago     ARG UID=101                                     0B        buildkit.dockerfile.v0
+<missing>      4 weeks ago     ENV DYNPKG_RELEASE=1                            0B        buildkit.dockerfile.v0
+<missing>      4 weeks ago     ENV PKG_RELEASE=1                               0B        buildkit.dockerfile.v0
+<missing>      4 weeks ago     ENV NGINX_VERSION=1.30.6                        0B        buildkit.dockerfile.v0
+<missing>      4 weeks ago     LABEL maintainer=NGINX Docker Maintainers <dÔÇª   0B        buildkit.dockerfile.v0
+<missing>      8 weeks ago     CMD ["/bin/sh"]                                 0B        buildkit.dockerfile.v0
+<missing>      8 weeks ago     ADD alpine-minirootfs-3.24.2-x86_64.tar.gz /ÔÇª   9.08MB    buildkit.dockerfile.v0

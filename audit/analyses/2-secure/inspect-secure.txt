@@ -1,0 +1,9 @@
+User=101
+ReadonlyRootfs=true
+CapDrop=["ALL"]
+SecurityOpt=["no-new-privileges"]
+Memory=134217728
+NanoCpus=500000000
+PidsLimit=100
+Tmpfs={"/tmp":""}
+Mounts=[]

@@ -1,0 +1,12 @@
+# ---------- Étape 1 : build (variante -dev : shell + npm, tourne en root) ----------
+FROM dhi.io/node:24-alpine3.23-dev AS build
+WORKDIR /app
+COPY package.json package-lock.json ./
+RUN npm ci
+COPY . .
+RUN npm run build
+
+# ---------- Étape 2 : exécution (variante runtime : sans gestionnaire de paquets, non-root par défaut) ----------
+FROM dhi.io/nginx:1.30-alpine3.23
+COPY --from=build /app/dist /usr/share/nginx/html
+EXPOSE 8080

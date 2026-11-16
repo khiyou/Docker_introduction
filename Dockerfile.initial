@@ -1,0 +1,20 @@
+FROM node:27.0.0-alpha.0.0.0-alpine3.23
+
+WORKDIR /app
+
+COPY package.json package-lock.json ./
+
+COPY index.html ./
+COPY main.js ./
+COPY style.css ./
+COPY questions_defaut.js ./
+COPY javascript.svg ./
+COPY vite.config.js ./
+COPY images ./images
+COPY public ./public
+
+RUN npm install && npm install -g serve && npm run build && rm -rf node_modules
+
+EXPOSE 3000
+
+CMD ["serve", "-s", "dist", "-l", "3000"]

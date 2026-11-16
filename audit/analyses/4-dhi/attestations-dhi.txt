@@ -1,0 +1,184 @@
+
+
+## Overview
+
+              │                    Analyzed Image                     
+──────────────┼───────────────────────────────────────────────────────
+ Subject      │  registry://dhi.io/nginx:1.30-alpine3.23              
+   digest     │  2f88ac0c4d10                                         
+   platform   │ linux/arm64                                           
+   provenance │ https://github.com/docker-hardened-images/definitions 
+              │  https://github.com/docker-hardened-images/definitions/blob/f960f3d418f68e56a7e35ac884a88d6d35eea02d             
+   size       │ 4.8 MB                                                
+   packages   │ 15                                                    
+
+
+## Attestations
+
+https://cyclonedx.org/bom/v1.6  CycloneDX SBOM  
+  sha256:c29b8d474b5f6f3906a149e552312c0d036dbd77baeae5dde00864b2c0797e56
+
+ Name                        │  dhi.io/nginx                              
+   digest                    │  c29b8d474b5f                              
+                             │                                            
+ Media type                  │ application/vnd.oci.image.manifest.v1+json 
+ Artifact type               │ application/vnd.in-toto+json               
+ Annotations                 │                                            
+   in-toto.io/predicate-type │ https://cyclonedx.org/bom/v1.6             
+
+
+https://docker.com/dhi/changelog/v0.1  Changelog  
+  sha256:3b5da0b1db27ccb97749d4314a798d931882518c218ad85068ff9880a36e0919
+
+ Name                        │  dhi.io/nginx                              
+   digest                    │  3b5da0b1db27                              
+                             │                                            
+ Media type                  │ application/vnd.oci.image.manifest.v1+json 
+ Artifact type               │ application/vnd.in-toto+json               
+ Annotations                 │                                            
+   in-toto.io/predicate-type │ https://docker.com/dhi/changelog/v0.1      
+
+
+https://docker.com/dhi/source/v0.1
+  sha256:7e75edee18e76edd4bf98eccd4152b9beaca9cb13bdc89450fd9164b0d8e3793
+
+ Name                        │  dhi.io/nginx                              
+   digest                    │  7e75edee18e7                              
+                             │                                            
+ Media type                  │ application/vnd.oci.image.manifest.v1+json 
+ Artifact type               │ application/vnd.in-toto+json               
+ Annotations                 │                                            
+   in-toto.io/predicate-type │ https://docker.com/dhi/source/v0.1         
+
+
+https://in-toto.io/attestation/vulns/v0.2  in-toto vulnerabilities  
+  sha256:3f1ba9d7b9f8f0fc6a47d3a436972932b8f7d285de1411ae2bfe8484ba635164
+
+ Name                        │  dhi.io/nginx                              
+   digest                    │  3f1ba9d7b9f8                              
+                             │                                            
+ Media type                  │ application/vnd.oci.image.manifest.v1+json 
+ Artifact type               │ application/vnd.in-toto+json               
+ Annotations                 │                                            
+   in-toto.io/predicate-type │ https://in-toto.io/attestation/vulns/v0.2  
+
+
+https://scout.docker.com/provenance/v0.1  Scout provenance  
+  sha256:79b327b6ff867d6e3be592c9f4b0c6770970952504906d99a8276d2bb7bb4d04
+
+ Name                        │  dhi.io/nginx                              
+   digest                    │  79b327b6ff86                              
+                             │                                            
+ Media type                  │ application/vnd.oci.image.manifest.v1+json 
+ Artifact type               │ application/vnd.in-toto+json               
+ Annotations                 │                                            
+   in-toto.io/predicate-type │ https://scout.docker.com/provenance/v0.1   
+
+
+https://scout.docker.com/sbom/v0.1  Scout SBOM  
+  sha256:185d1d98b5d9ede3ea1a1aa6eecfbd9c5808db8414de58b30c0dbbd6f012a374
+
+ Name                        │  dhi.io/nginx                              
+   digest                    │  185d1d98b5d9                              
+                             │                                            
+ Media type                  │ application/vnd.oci.image.manifest.v1+json 
+ Artifact type               │ application/vnd.in-toto+json               
+ Annotations                 │                                            
+   in-toto.io/predicate-type │ https://scout.docker.com/sbom/v0.1         
+
+
+https://scout.docker.com/secrets/v0.1  Scout secret scan  
+  sha256:18b58992ef58ce159255e600f6fb6f7b3d96dced36e2007853f9c8c777e375fb
+
+ Name                        │  dhi.io/nginx                              
+   digest                    │  18b58992ef58                              
+                             │                                            
+ Media type                  │ application/vnd.oci.image.manifest.v1+json 
+ Artifact type               │ application/vnd.in-toto+json               
+ Annotations                 │                                            
+   in-toto.io/predicate-type │ https://scout.docker.com/secrets/v0.1      
+
+
+https://scout.docker.com/tests/v0.1  Scout test report  
+  sha256:b1e034e9d12bf4a0d90af2d09c0e55d2cc81408e0cf3b9871decac06f0589eb2
+
+ Name                        │  dhi.io/nginx                              
+   digest                    │  b1e034e9d12b                              
+                             │                                            
+ Media type                  │ application/vnd.oci.image.manifest.v1+json 
+ Artifact type               │ application/vnd.in-toto+json               
+ Annotations                 │                                            
+   in-toto.io/predicate-type │ https://scout.docker.com/tests/v0.1        
+
+
+https://scout.docker.com/virus/v0.1  Scout virus/malware report  
+  sha256:4f7fd21dfeb3744b23d899578c60a587f69c4fc3631b8d199cc3d1cfed4d9684
+
+ Name                        │  dhi.io/nginx                              
+   digest                    │  4f7fd21dfeb3                              
+                             │                                            
+ Media type                  │ application/vnd.oci.image.manifest.v1+json 
+ Artifact type               │ application/vnd.in-toto+json               
+ Annotations                 │                                            
+   in-toto.io/predicate-type │ https://scout.docker.com/virus/v0.1        
+
+
+https://scout.docker.com/vulnerabilities/v0.1  Scout vulnerabilities  
+  sha256:598e36a292b5e140ef8e2ac8fed5fdbecdf3093141d4569eb970e62f71579854
+
+ Name                        │  dhi.io/nginx                                 
+   digest                    │  598e36a292b5                                 
+                             │                                               
+ Media type                  │ application/vnd.oci.image.manifest.v1+json    
+ Artifact type               │ application/vnd.in-toto+json                  
+ Annotations                 │                                               
+   in-toto.io/predicate-type │ https://scout.docker.com/vulnerabilities/v0.1 
+
+
+https://slsa.dev/provenance/v0.2  SLSA provenance  
+  sha256:46e4790d3e939926e30c4c87266ce44c8671d5eaf3f83ffb5f2963dee3cd94da
+
+ Name                        │  dhi.io/nginx                              
+   digest                    │  46e4790d3e93                              
+                             │                                            
+ Media type                  │ application/vnd.oci.image.manifest.v1+json 
+ Artifact type               │ application/vnd.in-toto+json               
+ Annotations                 │                                            
+   in-toto.io/predicate-type │ https://slsa.dev/provenance/v0.2           
+
+
+https://slsa.dev/provenance/v1  SLSA provenance  
+  sha256:90f5b24cec23be6350785f4aacfdb990c7857e9c6ed0da40168947c236096f97
+
+ Name                        │  dhi.io/nginx                              
+   digest                    │  90f5b24cec23                              
+                             │                                            
+ Media type                  │ application/vnd.oci.image.manifest.v1+json 
+ Artifact type               │ application/vnd.in-toto+json               
+ Annotations                 │                                            
+   in-toto.io/predicate-type │ https://slsa.dev/provenance/v1             
+
+
+https://slsa.dev/verification_summary/v1  SLSA verification summary  
+  sha256:b303800d442a6c95a12cebd6aeb434548e151df9f8cf016a6cba80bad5c6269c
+
+ Name                        │  dhi.io/nginx                              
+   digest                    │  b303800d442a                              
+                             │                                            
+ Media type                  │ application/vnd.oci.image.manifest.v1+json 
+ Artifact type               │ application/vnd.in-toto+json               
+ Annotations                 │                                            
+   in-toto.io/predicate-type │ https://slsa.dev/verification_summary/v1   
+
+
+https://spdx.dev/Document  SPDX SBOM  
+  sha256:9851c6592e6835baf2f6a57df645c03882540d1b6123b13540919acfa0d8a21d
+
+ Name                        │  dhi.io/nginx                              
+   digest                    │  9851c6592e68                              
+                             │                                            
+ Media type                  │ application/vnd.oci.image.manifest.v1+json 
+ Artifact type               │ application/vnd.in-toto+json               
+ Annotations                 │                                            
+   in-toto.io/predicate-type │ https://spdx.dev/Document                  
+

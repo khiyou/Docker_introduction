@@ -1,0 +1,212 @@
+
+
+## Overview
+
+                   Ôöé       Analyzed Image        
+ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔö╝ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
+ Target            Ôöé  quiz-docker:initial        
+   digest          Ôöé  d044470856cb               
+   platform        Ôöé linux/amd64                 
+   vulnerabilities Ôöé    1C     6H    13M     1L  
+   size            Ôöé 75 MB                       
+   packages        Ôöé 239                         
+
+
+## Packages and Vulnerabilities
+
+   1C     0H     0M     0L  zlib 1.3.2-r1
+pkg:apk/alpine/zlib@1.3.2-r1?os_name=alpine&os_version=3.23
+
+    x CRITICAL CVE-2026-4738
+      https://scout.docker.com/v/CVE-2026-4738?s=alpine&n=zlib&ns=alpine&t=apk&osn=alpine&osv=3.23&vr=%3C1.4-r0
+      Affected range : <1.4-r0 
+      Fixed version  : 1.4-r0  
+    
+
+   0C     4H     3M     1L  undici 6.28.0
+pkg:npm/undici@6.28.0
+
+    x HIGH CVE-2026-87018 [Uncaught Exception]
+      https://scout.docker.com/v/CVE-2026-87018?s=github&n=undici&t=npm&vr=%3E%3D4.2.1%2C%3C6.29.1
+      Affected range : >=4.2.1                                      
+                     : <6.29.1                                      
+      Fixed version  : 6.29.1                                       
+      CVSS Score     : 7.5                                          
+      CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H 
+    
+    x HIGH CVE-2026-19534 [Uncaught Exception]
+      https://scout.docker.com/v/CVE-2026-19534?s=github&n=undici&t=npm&vr=%3E%3D6.7.0%2C%3C6.28.1
+      Affected range : >=6.7.0                                      
+                     : <6.28.1                                      
+      Fixed version  : 6.28.1                                       
+      CVSS Score     : 7.5                                          
+      CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H 
+    
+    x HIGH CVE-2026-109869 [Uncaught Exception]
+      https://scout.docker.com/v/CVE-2026-109869?s=github&n=undici&t=npm&vr=%3E%3D6.23.0%2C%3C6.29.1
+      Affected range : >=6.23.0                                     
+                     : <6.29.1                                      
+      Fixed version  : 6.29.1                                       
+      CVSS Score     : 7.5                                          
+      CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H 
+    
+    x HIGH CVE-2026-109383 [Improper Certificate Validation]
+      https://scout.docker.com/v/CVE-2026-109383?s=github&n=undici&t=npm&vr=%3E%3D4.0.0%2C%3C6.29.1
+      Affected range : >=4.0.0                                      
+                     : <6.29.1                                      
+      Fixed version  : 6.29.1                                       
+      CVSS Score     : 7.4                                          
+      CVSS Vector    : CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N 
+    
+    x MEDIUM CVE-2026-85024 [Uncaught Exception]
+      https://scout.docker.com/v/CVE-2026-85024?s=github&n=undici&t=npm&vr=%3E%3D6.25.0%2C%3C6.28.1
+      Affected range : >=6.25.0                                     
+                     : <6.28.1                                      
+      Fixed version  : 6.28.1                                       
+      CVSS Score     : 5.9                                          
+      CVSS Vector    : CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H 
+    
+    x MEDIUM CVE-2026-109932 [Uncontrolled Resource Consumption]
+      https://scout.docker.com/v/CVE-2026-109932?s=github&n=undici&t=npm&vr=%3E%3D5.15.0%2C%3C6.29.1
+      Affected range : >=5.15.0                                     
+                     : <6.29.1                                      
+      Fixed version  : 6.29.1                                       
+      CVSS Score     : 5.9                                          
+      CVSS Vector    : CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H 
+    
+    x MEDIUM CVE-2026-109924 [Allocation of Resources Without Limits or Throttling]
+      https://scout.docker.com/v/CVE-2026-109924?s=github&n=undici&t=npm&vr=%3E%3D6.5.0%2C%3C6.29.1
+      Affected range : >=6.5.0                                      
+                     : <6.29.1                                      
+      Fixed version  : 6.29.1                                       
+      CVSS Score     : 5.9                                          
+      CVSS Vector    : CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H 
+    
+    x LOW CVE-2026-18540 [Inconsistent Interpretation of HTTP Requests ('HTTP Request/Response Smuggling')]
+      https://scout.docker.com/v/CVE-2026-18540?s=github&n=undici&t=npm&vr=%3C6.28.1
+      Affected range : <6.28.1                                      
+      Fixed version  : 6.28.1                                       
+      CVSS Score     : 3.7                                          
+      CVSS Vector    : CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N 
+    
+
+   0C     2H     1M     0L  brace-expansion 5.0.9
+pkg:npm/brace-expansion@5.0.9
+
+    x HIGH CVE-2026-102278 [Uncontrolled Resource Consumption]
+      https://scout.docker.com/v/CVE-2026-102278?s=github&n=brace-expansion&t=npm&vr=%3E%3D4.0.0%2C%3C5.0.11
+      Affected range : >=4.0.0                                      
+                     : <5.0.11                                      
+      Fixed version  : 5.0.11                                       
+      CVSS Score     : 7.5                                          
+      CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H 
+    
+    x HIGH CVE-2026-102276 [Uncontrolled Resource Consumption]
+      https://scout.docker.com/v/CVE-2026-102276?s=github&n=brace-expansion&t=npm&vr=%3E%3D4.0.0%2C%3C5.0.10
+      Affected range : >=4.0.0                                      
+                     : <5.0.10                                      
+      Fixed version  : 5.0.10                                       
+      CVSS Score     : 7.5                                          
+      CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H 
+    
+    x MEDIUM CVE-2026-102277 [Uncontrolled Resource Consumption]
+      https://scout.docker.com/v/CVE-2026-102277?s=github&n=brace-expansion&t=npm&vr=%3E%3D4.0.0%2C%3C5.0.12
+      Affected range : >=4.0.0                                      
+                     : <5.0.12                                      
+      Fixed version  : 5.0.12                                       
+      CVSS Score     : 5.3                                          
+      CVSS Vector    : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L 
+    
+
+   0C     0H     5M     0L  ip-address 10.5.0
+pkg:npm/ip-address@10.5.0
+
+    x MEDIUM CVE-2026-101910 [Server-Side Request Forgery (SSRF)]
+      https://scout.docker.com/v/CVE-2026-101910?s=github&n=ip-address&t=npm&vr=%3E%3D10.2.0%2C%3C%3D10.5.0
+      Affected range : >=10.2.0                                                        
+                     : <=10.5.0                                                        
+      Fixed version  : 10.5.1                                                          
+      CVSS Score     : 6.9                                                             
+      CVSS Vector    : CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:L/VI:N/VA:N/SC:H/SI:N/SA:N 
+    
+    x MEDIUM CVE-2026-111997 [Inefficient Regular Expression Complexity]
+      https://scout.docker.com/v/CVE-2026-111997?s=github&n=ip-address&t=npm&vr=%3C%3D10.7.3
+      Affected range : <=10.7.3                                                        
+      Fixed version  : 10.7.4                                                          
+      CVSS Score     : 6.3                                                             
+      CVSS Vector    : CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N 
+    
+    x MEDIUM CVE-2026-101913 [Incorrect Comparison]
+      https://scout.docker.com/v/CVE-2026-101913?s=github&n=ip-address&t=npm&vr=%3C%3D10.5.0
+      Affected range : <=10.5.0                                                        
+      Fixed version  : 10.5.1                                                          
+      CVSS Score     : 6.3                                                             
+      CVSS Vector    : CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:L/VI:N/VA:N/SC:L/SI:N/SA:N 
+    
+    x MEDIUM CVE-2026-101912 [Incorrect Comparison]
+      https://scout.docker.com/v/CVE-2026-101912?s=github&n=ip-address&t=npm&vr=%3C%3D10.7.0
+      Affected range : <=10.7.0                                                        
+      Fixed version  : 10.7.1                                                          
+      CVSS Score     : 6.3                                                             
+      CVSS Vector    : CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N 
+    
+    x MEDIUM CVE-2026-101911 [Uncontrolled Resource Consumption]
+      https://scout.docker.com/v/CVE-2026-101911?s=github&n=ip-address&t=npm&vr=%3C%3D10.7.0
+      Affected range : <=10.7.0                                                        
+      Fixed version  : 10.7.1                                                          
+      CVSS Score     : 6.3                                                             
+      CVSS Vector    : CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N 
+    
+
+   0C     0H     1M     0L  postcss-selector-parser 7.1.4
+pkg:npm/postcss-selector-parser@7.1.4
+
+    x MEDIUM CVE-2026-104844 [Uncontrolled Resource Consumption]
+      https://scout.docker.com/v/CVE-2026-104844?s=github&n=postcss-selector-parser&t=npm&vr=%3E%3D7.0.0%2C%3C7.1.6
+      Affected range : >=7.0.0                                      
+                     : <7.1.6                                       
+      Fixed version  : 7.1.6                                        
+      CVSS Score     : 5.9                                          
+      CVSS Vector    : CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H 
+    
+
+   0C     0H     1M     0L  busybox 1.37.0-r30
+pkg:apk/alpine/busybox@1.37.0-r30?os_name=alpine&os_version=3.23
+
+    x MEDIUM CVE-2025-60876
+      https://scout.docker.com/v/CVE-2025-60876?s=alpine&n=busybox&ns=alpine&t=apk&osn=alpine&osv=3.23&vr=%3C%3D1.37.0-r30
+      Affected range : <=1.37.0-r30 
+      Fixed version  : not fixed    
+    
+
+   0C     0H     1M     0L  minimatch 10.2.5
+pkg:npm/minimatch@10.2.5
+
+    x MEDIUM CVE-2026-118764 [Asymmetric Resource Consumption (Amplification)]
+      https://scout.docker.com/v/CVE-2026-118764?s=github&n=minimatch&t=npm&vr=%3E%3D7.0.0%2C%3C11.0.1
+      Affected range : >=7.0.0                                                         
+                     : <11.0.1                                                         
+      Fixed version  : 11.0.1                                                          
+      CVSS Score     : 6.9                                                             
+      CVSS Vector    : CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N 
+    
+
+   0C     0H     1M     0L  glob 13.0.6
+pkg:npm/glob@13.0.6
+
+    x MEDIUM CVE-2026-118773 [Uncontrolled Resource Consumption]
+      https://scout.docker.com/v/CVE-2026-118773?s=github&n=glob&t=npm&vr=%3E%3D9.0.0%2C%3C%3D14.0.1
+      Affected range : >=9.0.0                                                         
+                     : <=14.0.1                                                        
+      Fixed version  : 14.0.2                                                          
+      CVSS Score     : 6.3                                                             
+      CVSS Vector    : CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N 
+    
+
+
+21 vulnerabilities found in 8 packages
+  CRITICAL  1  
+  HIGH      6  
+  MEDIUM    13 
+  LOW       1  
+

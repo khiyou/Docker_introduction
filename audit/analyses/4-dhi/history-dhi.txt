@@ -1,0 +1,8 @@
+IMAGE          CREATED          CREATED BY                                      SIZE      COMMENT
+0a79363e6652   49 seconds ago   EXPOSE [8080/tcp]                               0B        buildkit.dockerfile.v0
+<missing>      49 seconds ago   COPY /app/dist /usr/share/nginx/html # build…   57.3kB    buildkit.dockerfile.v0
+<missing>      4 weeks ago      add metadata                                    57.3kB    buildkit.exporter.image.v0
+<missing>      4 weeks ago      add users and groups                            28.7kB    buildkit.exporter.image.v0
+<missing>      4 weeks ago      build nginx                                     86kB      buildkit.exporter.image.v0
+<missing>      4 weeks ago      mount /out from exec /install x86_64 alpine-…   11.8MB    buildkit.exporter.image.v0
+<missing>      4 weeks ago      add root layout                                 86kB      buildkit.exporter.image.v0
