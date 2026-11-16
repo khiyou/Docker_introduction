@@ -2,7 +2,7 @@
 
 Application : quiz Vite (fichiers statiques), conteneurisée puis sécurisée.
 
-- **Dépôt Git :** _<lien vers ce dépôt GitHub>_
+- **Dépôt Git :** _https://github.com/khiyou/Docker_introduction/_
 - **Image publiée (Docker Hub) :** [`khiyou/quiz-docker:secure`](https://hub.docker.com/r/khiyou/quiz-docker), avec SBOM et provenance
 
 ## Livrables
